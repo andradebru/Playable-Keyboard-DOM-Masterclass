@@ -14,10 +14,10 @@ function playNote(event) {
   }
 
   playAudio(audioKeyCode);
-  addPlayingClass(key);
+  addOrRemovePlayingClass(key);
 }
 
-function addPlayingClass(key) {
+function addOrRemovePlayingClass(key) {
   key.classList.add("playing");
 }
 
